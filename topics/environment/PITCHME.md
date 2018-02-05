@@ -35,3 +35,20 @@ Next we need to install homebrew, a package manager for Mac
 ```
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
+The script will explain what changes it will make and prompt you before the installation begins.
+
++++
+Now we need to update our `PATH` to point to the directory homebrew will be installing things. You can do this by editing your .bash_profile (Create this file if it does not exist.)
+```
+my-laptop:~ austevick$ nano ~/.bash_profile
+```
+Now add in following line and save the file
+```
+export PATH=/usr/local/bin:/usr/local/sbin:$PATH
+```
+
++++
+You can now install Python 2.7 by:
+```
+my-laptop:~ austevick$ brew install python
+```
