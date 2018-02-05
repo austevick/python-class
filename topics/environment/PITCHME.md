@@ -17,3 +17,21 @@ my-laptop:~ austevick$ python -V
 Python 2.7.13
 my-laptop:~ austevick$
 ```
+
++++
+For macs, you also have the option of installing it through homebrew
+
++++
+
+First, make sure you have a C compiler installed. This will be used by python to install any C dependencies. If you already have it, you should see an error saying the tools are already installed
+```
+my-laptop:~ austevick$ xcode-select --install
+xcode-select: error: command line tools are already installed, use "Software Update" to install updates
+my-laptop:~ austevick$
+```
++++
+
+Next we need to install homebrew, a package manager for Mac
+```
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
