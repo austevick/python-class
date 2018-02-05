@@ -1,6 +1,5 @@
-## Python
-#### A quick intro for python
-##### you know....for dummies...
+### A quick intro for python
+#### you know....for dummies...
 ---
 ## Intro
 ---
