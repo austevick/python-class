@@ -11,6 +11,31 @@ To have a good development environment, we will need 3 things:
 - An installed Text Editor or IDE |
 
 +++
+Pip is the python package manager. It is used to install, upgrade, remove and package python modules.
+
++++
+Virtualenv is a tool to create isolated Python environments. This comes in handy when you have two separate packages that need two incompatible versions of the same dependency. Using virtualenv will keep them separate from each other.
+
++++
+The basic workflow for working with virtualenv is to first create the directory that will hold your project and cd into it:
+```
+my-laptop:~ austevick$ mkdir my_project && cd my_project
+```
+Then Create the virtualenv by running `virtualenv [env name]`:
+```
+my-laptop:~ austevick$ virtualenv env
+```
+Finally, you "activate" the env by sourcing the activate file:
+```
+my-laptop:~ austevick$ source env/bin/activate
+```
+
++++
+Lastly, you can deactivate the environment by running:
+```
+my-laptop:~ austevick$ deactivate
+```
+---
 For Mac and Linux, you should already have python installed. You can verify this by running:
 ```
 my-laptop:~ austevick$ python -V
@@ -19,7 +44,7 @@ my-laptop:~ austevick$
 ```
 
 +++
-Next, install virtualenv:
+Next, install virtualenv.
 ```
 my-laptop:~ austevick$ sudo pip install virtualenv
 ```
@@ -53,7 +78,7 @@ Now add in following line and save the file
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 ```
 
-+++
+---
 For Windows users, I suggest you go through this walk through:
 [Installing Python 2 on Windows](http://docs.python-guide.org/en/latest/starting/install/win/)
 
