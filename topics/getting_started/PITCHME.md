@@ -130,3 +130,12 @@ date = datetime.now()
 ```
 @[1-2](We would need to call the function we want by running datetime.datetime.now())
 @[4-5](We would call the function we want running datetime.now())
+
++++
+The print statement which prints to Standard Out
+```
+print "Hello"
+>>> Hello
+```
+@[1](Calling print "Hello")
+@[2](Prints "Hello" to the console)
