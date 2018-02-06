@@ -49,6 +49,7 @@ For a text editor, you have several choices:
 Personally, I prefer to use a Text Editor over a full blown IDE but if you want to use an IDE, the best one is [Pycharm](https://www.jetbrains.com/pycharm/download/). The Community edition is free for use and great for everyday development.
 
 ---
+### Installing Python on Mac/Linux
 For Mac and Linux, you should already have python installed. You can verify this by running:
 ```
 my-laptop:~ austevick$ python -V
