@@ -41,8 +41,8 @@ For a text editor, you have several choices:
     - If on Mac, make sure you click `Atom -> Install Shell Commands` so you can open up files from Terminal:
         - `atom .` to open the current directory
         - `atom hello.py` to open a file called hello.py
-- [Visual Code](https://code.visualstudio.com/) |
-- [Sublime Text](https://www.sublimetext.com/) |
+- [Visual Code](https://code.visualstudio.com/)
+- [Sublime Text](https://www.sublimetext.com/)
 ---
 For Mac and Linux, you should already have python installed. You can verify this by running:
 ```
