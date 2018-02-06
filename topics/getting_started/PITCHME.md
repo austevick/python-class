@@ -108,3 +108,18 @@ with open("x.txt") as f:
     print data
 ```
 @[1-3](This will automatically close the file when done)
+
++++
+The pass statement is needed to create an empty code block.
+```
+def doNothing():
+    pass
+```
+
++++
+The import statement, which is used to import modules. There are two ways of using import:
+```
+import datetime
+# or
+from datetime.datetime import *
+```
