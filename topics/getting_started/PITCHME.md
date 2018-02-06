@@ -170,3 +170,13 @@ print c is a
 @[5-6](Assigning 2 variables to the same object)
 @[8](Is not the same because the objects are separate references)
 @[9](But assigning c to a means we are making c to be a)
+
++++
+Python uses the words and, or, not for its boolean operators rather than the symbolic &&, ||, ! used in Java and C.
+```
+a = True
+b = False
+if a and not b:
+    "a is True and b is False"
+```
+@[3](If a is True AND b is NOT True)
