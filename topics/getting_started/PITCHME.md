@@ -11,10 +11,7 @@ The language's core philosophy is summarized in the document The [Zen of Python]
 - Readability counts |
 
 +++
-Python uses dynamic typing, and a combination of reference counting and a cycle-detecting garbage collector for memory management. It also features dynamic name resolution (late binding), which binds method and variable names during program execution.
-
-+++
-Python's design offers some support for functional programming. It has filter(), map(), and reduce() functions; list comprehensions, dictionaries, and sets; and generator expressions. The standard library has two modules (itertools and functools) that implement functional tools borrowed from Haskell and Standard ML.
+Python uses dynamic typing, and a combination of reference counting and a cycle-detecting garbage collector for memory management (i.e. deletes a variable when a value no longer has any references to it). It also features dynamic name resolution (late binding), which binds method and variable names during program execution.
 
 ---
 ## Syntax and semantics
