@@ -129,4 +129,4 @@ from datetime import *
 date = datetime.now()
 ```
 @[1-2](We would need to call the function we want by running datetime.datetime.now())
-@[3-4](We would call the function we want running datetime.now())
+@[4-5](We would call the function we want running datetime.now())
