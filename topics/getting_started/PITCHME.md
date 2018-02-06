@@ -106,8 +106,8 @@ def hello(name):
 hello("Austin")
 >>> Hello Austin
 ```
-@[1]
-@[3]
+@[1](Define the method here)
+@[3](Call it here)
 @[4](Which will print Hello Austin)
 +++
 The with statement encloses a code block within a context manager (for example opening a file and then closing it).
