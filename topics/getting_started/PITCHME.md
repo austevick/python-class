@@ -227,7 +227,7 @@ TypeError: cannot concatenate 'str' and 'int' objects
 
 +++
 ### A Python File
-Python source files use the ".py" extension and are called "modules." With a Python module hello.py, the easiest way to run it is with the shell command *python hello.py Alice* which calls the Python interpreter to execute the code in hello.py, passing it the command line argument "Alice"
+With a file called hello.py, the easiest way to run it is with the shell command *python hello.py Alice* which calls the Python interpreter to execute the code in hello.py, passing it the command line argument "Alice"
 ```
 #!/usr/bin/env python
 import sys
