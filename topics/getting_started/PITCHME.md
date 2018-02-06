@@ -186,3 +186,13 @@ if not a:
 @[3](If a is True AND b is NOT True)
 @[5](If a or b are true)
 @[7](If a is not True)
+
++++
+
+---
+## Types
+Type | Mutable | Description | Example
+---- | ------- | ----------- | -------
+bool | immutable | Boolean Value | True <br /> False
+bytearray | mutable | Sequence of bytes | bytearray(b'Some ASCII') <br /> bytearray([119, 105, 107, 105])
+bytes | immutable | Sequence of bytes | b'Some ASCII' <br /> bytes([119, 105, 107, 105])
