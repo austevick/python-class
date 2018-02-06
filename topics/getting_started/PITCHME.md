@@ -91,6 +91,13 @@ car = Car('Vroooommmmm')
 car.drive()
 >>> Vroooommmmm
 ```
+@[1](We declare the class here)
+@[2](The __init__ function is used to setup the class during the class's initialization)
+@[3](Here we assign the class property sound to the parameter sound. Class properties begin with self)
+@[4](We create a class method called drive)
+@[6](We create a new car and pass in the sound we want it to make)
+@[7](We call the drive method on car)
+@[7](We don't need to pass in self on this call because self gets automatically added into all class methods)
 +++
 The def statement, which defines a function or method.
 ```
