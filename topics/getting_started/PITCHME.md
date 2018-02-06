@@ -30,7 +30,7 @@ for thing in things:
 
 +++
 ### Statements
-Assigning values is different than in traditional languages. In C `x = 2` translates to "typed variable name x receives a copy of numeric value 2". In Python, `x = 2` translates to "(generic) name x receives a reference to a separate object of numeric type of value 2." Names may be rebound at any time to objects of varying types. Since a name is a generic reference holder it is unreasonable to associate a fixed data type with it.
+Assigning values is different than in traditional languages. In C `x = 2` translates to "typed variable name x receives a copy of numeric value 2". In Python, `x = 2` translates to "(generic) name x receives a reference to a separate object of numeric type of value 2." Names may be reassigned at any time to objects of varying types. Since a name is a generic reference holder it is unreasonable to associate a fixed data type with it.
 
 +++
 ```
@@ -42,6 +42,8 @@ Assigning values is different than in traditional languages. In C `x = 2` transl
 hello
 >>>
 ```
+@[1](Assign x to 3)
+@[4](We can also reassign x to "hello" which is a different type than the previous value 3)
 +++
 The if statement, which conditionally executes a block of code, along with else and elif.
 ```
