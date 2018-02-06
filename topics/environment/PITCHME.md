@@ -43,6 +43,10 @@ For a text editor, you have several choices:
         - `atom hello.py` to open a file called hello.py
 - [Visual Code](https://code.visualstudio.com/)
 - [Sublime Text](https://www.sublimetext.com/)
+
++++
+Personally, I prefer to use a Text Editor over a full blown IDE but if you want to use an IDE, the best one is [Pycharm](https://www.jetbrains.com/pycharm/download/). The Community edition is free for use and great for everyday development.
+
 ---
 For Mac and Linux, you should already have python installed. You can verify this by running:
 ```
