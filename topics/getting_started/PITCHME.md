@@ -115,6 +115,7 @@ The pass statement is needed to create an empty code block.
 def doNothing():
     pass
 ```
+@[2]
 
 +++
 The import statement, which is used to import modules. There are two ways of using import:
