@@ -62,6 +62,7 @@ things = [1,2,3,4]
 for thing in things:
     print thing
 ```
+@[3](Inside of the forloop, we have access to the variable thing which is declared in the loop)
 +++
 The while statement, which executes a block of code as long as its condition is true.
 ```
