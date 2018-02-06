@@ -189,10 +189,38 @@ if not a:
 
 +++
 
+### Math
+Python has the usual C arithmetic operators (+, -, *, /, %). It also has ** for exponentiation, e.g. 5**3 == 125 and 9**0.5 == 3.0
+
 ---
-## Types
-Type | Mutable | Description | Example
----- | ------- | ----------- | -------
-bool | immutable | Boolean Value | True <br /> False
-bytearray | mutable | Sequence of bytes | bytearray(b'Some ASCII') <br /> bytearray([119, 105, 107, 105])
-bytes | immutable | Sequence of bytes | b'Some ASCII' <br /> bytes([119, 105, 107, 105])
+### Python Interpreter
+```
+$ python        ## Run the Python interpreter
+Python 2.7.9 (default, Dec 30 2014, 03:41:42)
+[GCC 4.1.2 20080704 (Red Hat 4.1.2-55)] on linux2
+Type "help", "copyright", "credits" or "license" for more information.
+>>> a = 6
+>>> a
+6
+>>> a + 2
+8
+>>> a = 'hi'
+>>> a
+'hi'
+>>> len(a)
+2
+>>> a + len(a)
+Traceback (most recent call last):
+  File "", line 1, in
+TypeError: cannot concatenate 'str' and 'int' objects
+>>> a + str(len(a))
+'hi2'
+>>> ^D
+```
+@[5](set a variable in this interpreter session)
+@[6](entering an expression prints its value)
+@[10]('a' can hold a string just as well)
+@[13](call the len function on a string)
+@[15-18](try something that doesn't work)
+@[19-20](probably what you really wanted)
+@[21](type CTRL-d to exit (CTRL-z in Windows/DOS terminal))
