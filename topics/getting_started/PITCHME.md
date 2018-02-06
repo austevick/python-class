@@ -99,7 +99,9 @@ def hello(name):
 hello("Austin")
 >>> Hello Austin
 ```
-
+@[1]
+@[3]
+@[4](Which will print Hello Austin)
 +++
 The with statement encloses a code block within a context manager (for example opening a file and then closing it).
 ```
@@ -115,7 +117,7 @@ The pass statement is needed to create an empty code block.
 def doNothing():
     pass
 ```
-@[2]
+@[2](Putting pass here will allow the program to run without breaking)
 
 +++
 The import statement, which is used to import modules. There are two ways of using import:
