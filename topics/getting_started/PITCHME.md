@@ -116,7 +116,7 @@ with open("x.txt") as f:
     data = f.read()
     print data
 ```
-@[1-3](This will automatically close the file when done)
+@[1-3](This will automatically close the file when done because it runs inside the with statement)
 
 +++
 The pass statement is needed to create an empty code block.
