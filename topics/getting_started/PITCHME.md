@@ -172,11 +172,17 @@ print c is a
 @[9](But assigning c to a means we are making c to be a)
 
 +++
-Python uses the words and, or, not for its boolean operators rather than the symbolic &&, ||, ! used in Java and C.
+Python uses the words *and*, *or*, *not* for its boolean operators rather than the symbolic &&, ||, ! used in Java and C.
 ```
 a = True
 b = False
 if a and not b:
-    "a is True and b is False"
+    print "a is True AND b is False"
+if a or b:
+    print "If a is True OR b is True"
+if not a:
+    print "Not a"
 ```
 @[3](If a is True AND b is NOT True)
+@[5](If a or b are true)
+@[7](If a is not True)
