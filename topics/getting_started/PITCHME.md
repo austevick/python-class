@@ -123,6 +123,10 @@ def doNothing():
 The import statement, which is used to import modules. There are two ways of using import:
 ```
 import datetime
+date = datetime.datetime.now()
 # or
-from datetime.datetime import *
+from datetime import *
+date = datetime.now()
 ```
+@[1-2](We would need to call the function we want by running datetime.datetime.now())
+@[3-4](We would call the function we want running datetime.now())
