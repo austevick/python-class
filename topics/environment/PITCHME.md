@@ -1,3 +1,4 @@
+@title[Environment Setup]
 ## Environment Setup
 +++
 ### Setting Up Python
