@@ -21,7 +21,7 @@ The basic workflow for working with virtualenv is to first create the directory 
 ```
 my-laptop:~ austevick$ mkdir my_project && cd my_project
 ```
-Then Create the virtualenv by running `virtualenv [env name]`:
+Then Create the virtualenv by running `virtualenv [env name]`. This will create a folder called env/.
 ```
 my-laptop:~ austevick$ virtualenv env
 ```
@@ -35,6 +35,15 @@ Lastly, you can deactivate the environment by running:
 ```
 my-laptop:~ austevick$ deactivate
 ```
++++
+For a text editor, you have several choices:
+- [Atom](https://atom.io/)
+    - This is my Favorite
+    - If on Mac, make sure you click `Atom -> Install Shell Commands`so you can open up files from Terminal:
+        - `atom .` to open the current directory
+        - `atom hello.py` to open a file called hello.py
+- [Visual Code](https://code.visualstudio.com/)
+- [Sublime Text](https://www.sublimetext.com/)
 ---
 For Mac and Linux, you should already have python installed. You can verify this by running:
 ```
