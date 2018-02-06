@@ -136,6 +136,9 @@ The print statement which prints to Standard Out
 ```
 print "Hello"
 >>> Hello
+thing = [1,2,3,4]
+print thing
 ```
 @[1](Calling print "Hello")
 @[2](Prints "Hello" to the console)
+@[3-4](We can use the print statement to print objects as well)
