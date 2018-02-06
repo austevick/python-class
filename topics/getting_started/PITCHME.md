@@ -165,3 +165,8 @@ c = a
 print c is a
 >>> True
 ```
+@[1-2](Assigning 2 variables to the same value)
+@[3](Means they are the same)
+@[5-6](Assigning 2 variables to the same object)
+@[8](Is not the same because the objects are separate references)
+@[9](But assigning c to a means we are assigning the reference to a to c...making them the same thing)
