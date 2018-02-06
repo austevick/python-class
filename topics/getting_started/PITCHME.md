@@ -224,3 +224,23 @@ TypeError: cannot concatenate 'str' and 'int' objects
 @[15-18](try something that doesn't work)
 @[19-20](probably what you really wanted)
 @[21](type CTRL-d to exit (CTRL-z in Windows/DOS terminal))
+
++++
+### A Python File
+Python source files use the ".py" extension and are called "modules." With a Python module hello.py, the easiest way to run it is with the shell command *python hello.py Alice* which calls the Python interpreter to execute the code in hello.py, passing it the command line argument "Alice"
+```
+#!/usr/bin/env python
+import sys
+# Gather our code in a main() function
+
+def main():
+    print 'Hello there', sys.argv[1]
+
+if __name__ == '__main__':
+    main()
+```
+@[1](This tells bash to run the file with the python interpreter)
+@[2](import modules used here -- sys is a very standard one)
+@[6](Command line args are in sys.argv[1], sys.argv[2] etc.)
+@[6](sys.argv[0] is the script name itself and can be ignored)
+@[8-9](Standard boilerplate to call the main function)
