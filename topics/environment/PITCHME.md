@@ -93,6 +93,7 @@ export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 ```
 
 ---
+### Installing Python on Windows
 For Windows users, I suggest you go through this walk through:
 [Installing Python 2 on Windows](http://docs.python-guide.org/en/latest/starting/install/win/)
 
