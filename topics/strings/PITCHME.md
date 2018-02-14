@@ -174,3 +174,14 @@ Hello Austin!
 Hello Austin Evick!
 >>>
 ```
++++
+There is an older style of string formatting that uses %s and %d to act as placeholders for text/numbers
+```
+>>> first = 'Austin'
+>>> last = "Evick"
+>>> print "Hello %s!" % first
+Hello Austin!
+>>> print "Hello %s %s!" % (first,last)
+Hello Austin Evick!
+```
+This style has largely started to die but you you may still find it out in the wild
