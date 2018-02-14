@@ -156,7 +156,7 @@ print thing
 ## Expressions
 Some Python expressions are similar to languages such as C and Java, while some are not
 +++
-Addition, subtraction, and multiplication are the same, but the behavior of division differs. There are two types of divisions in Python. They are floor division and integer division.[63] Python also added the ** operator for exponentiation.
+Addition, subtraction, and multiplication are the same, but the behavior of division differs. There are two types of divisions in Python. They are floor division and integer division. Python also added the ** operator for exponentiation.
 +++
 In Python, == compares by value, versus Java, which compares numerics by value and objects by reference. Python's `is` operator may be used to compare object identities (comparison by reference).
 ```
