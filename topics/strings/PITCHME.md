@@ -33,3 +33,117 @@ print myString[5]
 @[3](Notice how the length of the string is 6)
 @[4](But we get the last character with myString[5]?)
 @[1-4](This is because len does NOT return a 0 based count. It is 1 based)
++++
+Unlike Java, the '+' does not automatically convert numbers or other types to string form. The str() function converts values to a string form so they can be combined with other strings.
+```
+pi = 3.14
+##text = 'The value of pi is ' + pi      ## NO, does not work
+text = 'The value of pi is '  + str(pi)  ## yes
+```
++++
+### String Methods
+Next you will see some of the most common string methods. A method is like a function, but it runs "on" an object. If the variable s is a string, then the code s.lower() runs the lower() method on that string object and returns the result
+
++++
+#### s.lower() & s.upper()
+returns the lowercase or uppercase version of the string
+```
+>>> s = 'Hello!'
+>>> low = s.lower()
+>>> print low
+'hello!'
+>>> s.upper()
+'HELLO!'
+```
+
++++
+#### s.strip()
+returns a string with whitespace removed from the start and end
+```
+>>> s = " Hello!  "
+>>> print s
+ Hello!  
+>>> stripped = s.strip()
+>>> print stripped
+Hello!
+>>>
+```
++++
+#### s.isalpha() & s.isdigit() & s.isspace()
+tests if all the string chars are in the various character classes
+```
+>>> s = 'Hello'
+>>> s.isalpha()
+True
+>>> s.isdigit()
+False
+>>> s = '12'
+>>> s.isdigit()
+True
+>>> s.isspace()
+False
+>>> s = ' '
+>>> s.isspace()
+True
+```
++++
+#### s.startswith('other') &  s.endswith('other')
+tests if the string starts or ends with the given other string
+```
+>>> s = 'Hello Austin'
+>>> s.startswith('Hel')
+True
+>>> s.endswith('tin')
+True
+>>> s.startswith('h')
+False
+>>> s.startswith('Hi')
+False
+```
++++
+#### s.find('other')
+searches for the given other string within s, and returns the first index where it begins or -1 if not found
+```
+>>> s = 'Hello Austin'
+>>> s.find("Hello")
+0
+>>> s.find("lo")
+3
+>>> s.find("yo")
+-1
+```
++++
+#### s.replace('old', 'new')
+returns a string where all occurrences of 'old' have been replaced by 'new'
+```
+>>> s = 'Hello Austin'
+>>> print s
+Hello Austin
+>>> print s.replace("Hello","Bye")
+Bye Austin
+```
++++
+#### s.split('delim')
+returns a list of substrings separated by the given delimiter. 'aaa,bbb,ccc'.split(',') -> ['aaa', 'bbb', 'ccc']. As a convenient special case s.split() (with no arguments) splits on all whitespace chars.
+```
+>>> s = 'a,csv,example'
+>>> print s.split(',')
+['a', 'csv', 'example']
+>>> s = 'Hello World!'
+>>> print s.split()
+['Hello', 'World!']
+```
++++
+#### s.join(list)
+opposite of split(), joins the elements in the given list together using the string as the delimiter. e.g. '---'.join(['aaa', 'bbb', 'ccc']) -> aaa---bbb---ccc
+```
+>>> L = ['make','A','csv']
+>>> print L
+['make', 'A', 'csv']
+>>> print ','.join(L)
+make,A,csv
+```
++++
+### String Slices
+The "slice" syntax is a handy way to refer to sub-parts of sequences -- typically strings and lists. The slice s[start:end] is the elements beginning at start and extending up to but not including end. Suppose we have s = "Hello"
+[Index example](https://developers.google.com/edu/python/images/hello.png)
