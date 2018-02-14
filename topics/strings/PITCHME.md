@@ -149,7 +149,28 @@ The "slice" syntax is a handy way to refer to sub-parts of sequences -- typicall
 
 +++
 ![Index example](https://developers.google.com/edu/python/images/hello.png)
-- s[1:4] is 'ell' -- chars starting at index 1 and extending up to but not including index 4
-- s[1:] is 'ello' -- omitting either index defaults to the start or end of the string
-- s[:] is 'Hello' -- omitting both always gives us a copy of the whole thing
-- s[1:100] is 'ello' -- an index that is too big is truncated down to the string length
+- s[1:4] is 'ell' - chars starting at index 1 and extending up to but not including index 4
+- s[1:] is 'ello' - omitting either index defaults to the start or end of the string
+- s[:] is 'Hello' - omitting both always gives us a copy of the whole thing
+- s[1:100] is 'ello' - an index that is too big is truncated down to the string length
+
++++
+![Index example](https://developers.google.com/edu/python/images/hello.png)
+- s[-1] is 'o' - last char (1st from the end)
+- s[-4] is 'e' - 4th from the end
+- s[:-3] is 'He' - going up to but not including the last 3 chars.
+- s[-3:] is 'llo' - starting with the 3rd char from the end and extending to the end of the string.
+
++++
+### String Formatting
+Python has the built-in ability to create "formatted" strings. Given a format string (what you want it to look like) and a group of arguments, you can create a new string that is a combination of the format string and the arguments.
+```
+>>> name = 'Austin'
+>>> print 'Hello {}!'.format(name)
+Hello Austin!
+>>> first = 'Austin'
+>>> last = 'Evick'
+>>> print 'Hello {} {}!'.format(first,last)
+Hello Austin Evick!
+>>>
+```
