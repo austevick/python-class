@@ -146,4 +146,4 @@ make,A,csv
 +++
 ### String Slices
 The "slice" syntax is a handy way to refer to sub-parts of sequences -- typically strings and lists. The slice s[start:end] is the elements beginning at start and extending up to but not including end. Suppose we have s = "Hello"
-[Index example](https://developers.google.com/edu/python/images/hello.png)
+![Index example](https://developers.google.com/edu/python/images/hello.png)
