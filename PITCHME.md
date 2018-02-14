@@ -12,8 +12,7 @@ Python is currently split between 2 major branches, Python 2.x and Python 3.x. P
 ---?include=topics/environment/PITCHME.md
 ---?include=topics/getting_started/PITCHME.md
 ---?include=topics/strings/PITCHME.md
----
-### Numbers
+---?include=topics/numbers/PITCHME.md
 ---
 ### Booleans
 ---
