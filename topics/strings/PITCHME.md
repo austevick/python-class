@@ -148,5 +148,8 @@ make,A,csv
 The "slice" syntax is a handy way to refer to sub-parts of sequences -- typically strings and lists. The slice s[start:end] is the elements beginning at start and extending up to but not including end.
 
 +++
-Suppose we have s = "Hello"
 ![Index example](https://developers.google.com/edu/python/images/hello.png)
+- s[1:4] is 'ell' -- chars starting at index 1 and extending up to but not including index 4
+- s[1:] is 'ello' -- omitting either index defaults to the start or end of the string
+- s[:] is 'Hello' -- omitting both always gives us a copy of the whole thing (this is the pythonic way to copy a sequence like a string or list)
+- s[1:100] is 'ello' -- an index that is too big is truncated down to the string length
