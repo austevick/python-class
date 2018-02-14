@@ -184,4 +184,7 @@ Hello Austin!
 >>> print "Hello %s %s!" % (first,last)
 Hello Austin Evick!
 ```
+@[3](Separate the format string and the arguments with a "%")
+@[3](When you only have one argument, you can just put the variable after the %)
+@[5](When you have more than one argument, you need to surround like so after the %)
 This style has largely started to die but you you may still find it out in the wild
