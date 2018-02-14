@@ -144,6 +144,8 @@ opposite of split(), joins the elements in the given list together using the str
 make,A,csv
 ```
 +++
+There are several more string methods available. Check out [String Methods](https://docs.python.org/2/library/stdtypes.html#string-methods) in the python documentation!
++++
 ### String Slices
 The "slice" syntax is a handy way to refer to sub-parts of sequences -- typically strings and lists. The slice s[start:end] is the elements beginning at start and extending up to but not including end.
 
@@ -186,5 +188,5 @@ Hello Austin Evick!
 ```
 @[3](Separate the format string and the arguments with a "%")
 @[3](When you only have one argument, you can just put the variable after the %)
-@[5](When you have more than one argument, you need to surround like so after the %)
+@[5](When you have more than one argument, you need to surround them like so after the %)
 This style has largely started to die but you you may still find it out in the wild
