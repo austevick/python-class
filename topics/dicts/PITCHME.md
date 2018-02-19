@@ -38,6 +38,7 @@ print a
 @[1-5](We can also define all the key/value pairs at initialization)
 +++
 Looking up a key that is not in the dict will lead to a KeyError. Use `if "foo" in dict` to see safely see if the key is in the dict. Alternatively, you can use the get() method on the dict object to safely get a key as it will return None if a key does not exists.
++++
 ```
 >>> thing = {"foo":"bar"}
 >>> "foo" in thing
