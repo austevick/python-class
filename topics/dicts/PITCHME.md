@@ -66,6 +66,7 @@ bar
 
 +++
 You can go through a dictionary in a for loop as python considers a dict a sequence. By default, the for loop will iterate over the keys in an arbitrary order (THE KEYS ARE NOT IN ORDER!!!).
++++
 ```
 thing = {"key1":"Thing 1","Key2":"Thing 2","key3":"Thing 3"}
 for that in thing:
