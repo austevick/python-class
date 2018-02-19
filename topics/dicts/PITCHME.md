@@ -11,6 +11,8 @@ An empty dict is represented by a pair of empty curly brackets
 a = {}
 ```
 +++
+![A dict](https://developers.google.com/edu/python/images/dict.png)
++++
 Looking up or setting a value uses square brackets. Running `a['foo']` looks up the key 'foo' in the dictionary "a". Strings, numbers and even tuples can be a key and any type can be a value. Strings and Tuples work best as keys as they are immutable and using mutable types may lead to unexpected behavior.
 ```
 a = {}
@@ -47,7 +49,6 @@ True
 ...     print "yes"
 ... else:
 ...     print "no"
-...
 no
 >>> print thing.get('foo')
 bar
@@ -57,3 +58,8 @@ None
 >>> print a
 bar
 ```
+@[2](Testing if "foo" is in thing. This will return True or False)
+@[4-7](The "in" syntax is usually used in if statements)
+@[9](A dictionary also has a get method we can use to safely get a key)
+@[11](If the key does not exist, it will return None)
+@[13](Using the get method will return the value so you can use it in variable assignment)
