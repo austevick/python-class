@@ -84,3 +84,17 @@ for that in thing:
 @[2-3](We loop through thing and print that)
 @[4-6](Printing that prints the keys)
 @[8](Since "that" holds the key, we can access the value by accessing the dict with the key)
+
++++
+A dictionary object has access to several methods such as keys(), values(), items(), iterkeys(), itervalues() and iteritems(). Keys() and values() is used to return a list of keys or values. items() will return a list of key/value tuples. The "iter methods" avoid the cost of constructing a whole list which can be a performance win if the dataset is huge.
++++
+```
+>>> thing = {"key1":"Thing 1","Key2":"Thing 2","key3":"Thing 3"}
+>>> keys = thing.keys()
+>>> print keys
+['key3', 'Key2', 'key1']
+>>> print thing.values()
+['Thing 3', 'Thing 2', 'Thing 1']
+>>> print thing.items()
+[('key3', 'Thing 3'), ('Key2', 'Thing 2'), ('key1', 'Thing 1')]
+```
