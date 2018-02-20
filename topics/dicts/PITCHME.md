@@ -104,7 +104,7 @@ Something interesting: A dict can hold any type of value so it can be used to mo
 ```
 instance = {
     "ImageId":"ami-97785bed",
-    "KeyName":"evicka",
+    "KeyName":"austin",
     "InstanceType":"t2.medium",
     "SecurityGroups":['SSH','Default','HTTP'],
     "IamInstanceProfile":{
