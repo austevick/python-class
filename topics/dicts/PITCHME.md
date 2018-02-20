@@ -98,3 +98,30 @@ A dictionary object has access to several methods such as keys(), values(), item
 >>> print thing.items()
 [('key3', 'Thing 3'), ('Key2', 'Thing 2'), ('key1', 'Thing 1')]
 ```
++++
+Something interesting: A dict can hold any type of value so it can be used to model many different types of objects. For example, to model many of the common parameters of a EC2 Instance:
++++
+```
+instance = {
+    "ImageId":"ami-97785bed",
+    "KeyName":"evicka",
+    "InstanceType":"t2.medium",
+    "SecurityGroups":['SSH','Default','HTTP'],
+    "IamInstanceProfile":{
+        'Arn':'',
+        'Name':''
+    },
+    "UserData":"""#!/bin/bash
+        yum update -y
+        yum install -y httpd24 php56 mysql55-server php56-mysqlnd
+        service httpd start
+        chkconfig httpd on
+        groupadd www
+        usermod -a -G www ec2-user
+        chown -R root:www /var/www
+        chmod 2775 /var/www
+        find /var/www -type d -exec chmod 2775 {} +
+        find /var/www -type f -exec chmod 0664 {} +
+        echo "<?php phpinfo(); ?>" > /var/www/html/phpinfo.php"""
+}
+```
