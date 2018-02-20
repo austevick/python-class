@@ -33,3 +33,15 @@ for number in my_list:
 >>> 2
 ...
 ```
++++
+The `in` keyword on its own is an easy way to test if a value appears in a list. Using `in` in an if statement returns True or False
+```
+colors = ['red', 'blue', 'green']
+blue = 'blue' in colors
+print blue
+>>> True
+if 'blue' in colors:
+    print 'yep, it\'s blue'
+>>> yep, it's blue
+```
+@[6](Notice in this print statement we have to escape the ' in it's. We escape it because otherwise the interpreter will think the string ends there)
