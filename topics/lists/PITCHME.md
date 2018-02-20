@@ -45,3 +45,10 @@ if 'blue' in colors:
 >>> yep, it's blue
 ```
 @[6](Notice in this print statement we have to escape the ' in it's. We escape it because otherwise the interpreter will think the string ends there)
++++
+### List Methods
+Since a list is also an object, a list type has several methods you can use on it
+- list.append(elem) -- adds a single element to the end of the list. Common error: does not return the new list, just modifies the original.
+- list.insert(index, elem) -- inserts the element at the given index, shifting elements to the right.
+- list.extend(list2) adds the elements in list2 to the end of the list. Using + or += on a list is similar to using extend().
+- list.index(elem) -- searches for the given element from the start of the list and returns its index. Throws a ValueError if the element does not appear (use "in" to check without a ValueError).
