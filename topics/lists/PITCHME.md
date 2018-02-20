@@ -10,3 +10,16 @@ print colors[2]
 print len(colors)
 >>> 3
 ```
++++
+![a list](https://developers.google.com/edu/python/images/list1.png)
++++
+Assignment with an = on lists does not make a copy. Instead, assignment makes the two variables point to the one list in memory.
+![list memory allocation](https://developers.google.com/edu/python/images/list2.png)
++++
+An empty list is denoted with an empty pair of brackets []. The '+' works to append two lists, so [1, 2] + [3, 4] yields [1, 2, 3, 4] (this is just like + with strings).
+```
+a = [1,2]
+b = [3,4]
+print a + b
+[1,2,3,4]
+```
