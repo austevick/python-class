@@ -2,7 +2,7 @@
 +++
 In Python, everything is an object and since an object is a class, everything in python is also a class.
 +++
-A class is a template for creating objects. Objects have member variables and behavior associated with them.
+A class is a template for creating objects. Objects have member variables (attributes) and behavior associated with them (methods).
 <!--  https://www.hackerearth.com/practice/python/object-oriented-programming/classes-and-objects-i/tutorial/ -->
 
 +++
@@ -45,7 +45,7 @@ print snake.name
 @[4](We access the class attribute using the self keyword)
 @[8](change the name using the change_name method)
 +++
-You can also provide the values for the attributes at runtime. This is done by defining the attributes inside the init method.
+You can also provide the values for the attributes at runtime (called instance attributes). This is done by defining the attributes inside the init method.
 ```
 class Snake:
     def __init__(self, name):
@@ -59,3 +59,6 @@ anaconda = Snake("anaconda")
 print python.name
 >>> "anaconda"
 ```
+@[2](Think of the __init__ method as a constructor)
+@[3](The init method gets passed self as the first argument which is followed by other arguments)
+@[6](Now when we create the class, we pass in the name of the snake)
