@@ -58,3 +58,38 @@ Since a list is also an object, a list type has several methods you can use on i
 - list.sort() - sorts the list in place (does not return it).
 - list.reverse() - reverses the list in place (does not return it)
 - list.pop(index) - removes and returns the element at the given index. Returns the rightmost element if index is omitted (roughly the opposite of append()).
++++
+```
+list = ['larry', 'curly', 'moe']
+list.append('shemp')         ## append elem at end
+list.insert(0, 'xxx')        ## insert elem at index 0
+list.extend(['yyy', 'zzz'])  ## add list of elems at end
+print list  ## ['xxx', 'larry', 'curly', 'moe', 'shemp', 'yyy', 'zzz']
+print list.index('curly')    ## 2
+
+list.remove('curly')         ## search and remove that element
+list.pop(1)                  ## removes and returns 'larry'
+print list  ## ['xxx', 'moe', 'shemp', 'yyy', 'zzz']
+```
++++
+### Building a list
+One common pattern wen creating a list is to create a empty list and add to it
+```
+list = []
+list.append('a')
+list.append('b')
+print list
+>>> ['a','b']
+```
++++
+### List Slices
+Slices work on lists just as with strings, and can also be used to change sub-parts of the list.
+```
+list = ['a', 'b', 'c', 'd']
+print list[1:-1]
+>>> ['b','c']
+list[0:2] = 'z'
+print list
+>>> ['z', 'c', 'd']
+```
+@[4](replace ['a', 'b'] with ['z'])
