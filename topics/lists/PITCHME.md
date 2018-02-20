@@ -23,3 +23,13 @@ b = [3,4]
 print a + b
 [1,2,3,4]
 ```
++++
+A list can be looped over in a for loop using the `in` keyword
+```
+my_list = [1,2,3,4,5]
+for number in my_list:
+    print number
+>>> 1
+>>> 2
+...
+```
