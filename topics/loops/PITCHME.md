@@ -82,7 +82,6 @@ The last keyword we often see in loops is the `pass` keyword. As we discussed be
 for letter in 'Python':
    if letter == 'h':
       pass
-      print 'This is pass block'
    print 'Current Letter :', letter
 print 'done'
 >>> Current Letter : P
@@ -92,3 +91,4 @@ print 'done'
 >>> Current Letter : n
 >>> done
 ```
+@[2-3](In this example, we don't want to do anything when the letter is h)
