@@ -92,3 +92,22 @@ print 'done'
 >>> done
 ```
 @[2-3](In this example, we don't want to do anything when the letter is h)
++++
+### How looping works behind the scenes
+Objects that can be looped over have a method called `__iter__` on them. This method returns an iterator object and does any needed initialization (like setting a counter to 0). The iterator object has a method on it called `next()` that the loop calls to get the next value.
++++
+```
+>>> thing = [1,2]
+>>> thing.__iter__()
+<listiterator object at 0x10ff96a90>
+>>> dir(thing.__iter__())
+['__class__', '__delattr__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__iter__', '__length_hint__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', 'next']
+>>> thing.__iter__().next()
+1
+>>>
+```
+@[1](Our object that can be looped over)
+@[2](Any object that can be used in a loop must have a __iter__ method. This method returns an iterator object)
+@[4](The dir method can be used to see properties of an object)
+@[5](We can see that the iterator object on thing has a method called next)
+@[6](Calling the next method on the iterator object gets the next value from the object)
