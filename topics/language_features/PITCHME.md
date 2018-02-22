@@ -84,6 +84,7 @@ Generators are used to create iterators. Generators are simple functions which r
 +++
 The generator gets called by the for statement. Once the generator's function code reaches a `yield` statement, the generator yields its execution back to the for loop, returning a new value from the set. The generator function can generate as many values as it wants, yielding each one in its turn.
 +++
+As seen in https://www.learnpython.org/en/Generators
 ```
 import random
   def lottery():
@@ -99,4 +100,4 @@ import random
 @[6](We take the number that was yielded to us in the lottery method and print it)
 @[5-6](After the current iteration of the loop finishes, the lottery function is resumed)
 @[3-4](Allowing it's own loop to contiue to the next number)
-As seen in https://www.learnpython.org/en/Generators
+@[2-6](The cycle will continue until lottery's loop finishes...so 6 iterations total)
