@@ -76,4 +76,26 @@ with open('test.csv') as f:
 @[6](For the sort key, we are using a lambda function)
 @[6](sorted is automatically passing in the current line as the argument to lambda)
 @[6](We then split the line on commas and fetch the item at index 1)
-@[6](Since this is a line line function, the value of line.split index 1 is considered to be implicitly returned)
+@[6](Since this is a single line function, the value of line.split index 1 is considered to be implicitly returned)
++++
+### Generators
+<!--  https://www.learnpython.org/en/Generators -->
+Generators are used to create iterators. Generators are simple functions which return an iterable set of items, one at a time using the yield keyword.
++++
+The generator gets called by the for statement. Once the generator's function code reaches a `yield` statement, the generator yields its execution back to the for loop, returning a new value from the set. The generator function can generate as many values as it wants, yielding each one in its turn.
++++
+```
+import random
+
+  def lottery():
+      # returns 6 numbers between 1 and 40
+      for i in range(6):
+          yield random.randint(1, 40)
+
+      # returns a 7th number between 1 and 15
+      yield random.randint(1,15)
+
+  for random_number in lottery():
+         print("And the next number is... %d!" %(random_number))
+```
+As seen in [](https://www.learnpython.org/en/Generators)
