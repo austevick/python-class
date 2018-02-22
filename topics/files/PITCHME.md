@@ -47,3 +47,47 @@ f = open('test.json','w')
 json.dump(data,f)
 f.close()
 ```
++++
+The syntax for working with yaml files is pretty much the same instead you are using the `yaml package`
+```
+import yaml
+data = {'myKey':"This is the value","thing1":[1,2,3,4]}
+f = open('test.json','w')
+yaml.dump(data,f)
+f.close()
+```
++++
+Python contains a special module just for working with csv files
+```
+import csv
+with open('eggs.csv', 'rb') as csvfile:
+    spamreader = csv.reader(csvfile, delimiter=' ', quotechar='|')
+    for row in spamreader:
+        print ', '.join(row)
+>>> Spam, Spam, Spam, Spam, Spam, Baked Beans
+>>> Spam, Lovely Spam, Wonderful Spam
+```
++++
+We can also read in the csv file as a dict if the file has a header row
+```
+import csv
+with open('names.csv') as csvfile:
+    reader = csv.DictReader(csvfile)
+    for row in reader:
+        print(row['first_name'], row['last_name'])
+>>> Baked Beans
+>>> Lovely Spam
+>>> Wonderful Spam
+```
++++
+Writing csv files are easy as well. The below is an example of using DictWriter to write a dictionary as csv
+```
+import csv
+with open('names.csv', 'w') as csvfile:
+    fieldnames = ['first_name', 'last_name']
+    writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+    writer.writeheader()
+    writer.writerow({'first_name': 'Baked', 'last_name': 'Beans'})
+    writer.writerow({'first_name': 'Lovely', 'last_name': 'Spam'})
+    writer.writerow({'first_name': 'Wonderful', 'last_name': 'Spam'})
+```
