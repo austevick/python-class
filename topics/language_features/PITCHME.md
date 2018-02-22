@@ -86,16 +86,17 @@ The generator gets called by the for statement. Once the generator's function co
 +++
 ```
 import random
-
   def lottery():
-      # returns 6 numbers between 1 and 40
       for i in range(6):
           yield random.randint(1, 40)
-
-      # returns a 7th number between 1 and 15
-      yield random.randint(1,15)
-
   for random_number in lottery():
          print("And the next number is... %d!" %(random_number))
 ```
+@[1](For this example, we will need to import the random package to make random numbers)
+@[5](The forloop is going to call our lottery function)
+@[3](We loop 6 times here)
+@[4](We are generating a random number between 1 and 40 and returning it to the loop that called the lottery method)
+@[6](We take the number that was yielded to us in the lottery method and print it)
+@[5-6](After the current iteration of the loop finishes, the lottery function is resumed)
+@[3-4](Allowing it's own loop to contiue to the next number)
 As seen in https://www.learnpython.org/en/Generators
