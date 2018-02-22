@@ -29,3 +29,24 @@ for root, dirs, files in os.walk('python/Lib/email'):
     if 'CVS' in dirs:
         dirs.remove('CVS')  # don't visit CVS directories
 ```
++++
+the os.path module is where working with files gets much easier
+- os.path.abspath(path) - Return a normalized absolutized version of the pathname path.
+```
+import os
+print os.path.abspath('pythonClass')
+/Users/austin/Things/MoreThings/pythonClass
+```
++++
+- os.path.basename(path) - Return the base name of pathname path.
+```
+import os
+print os.path.basename('/Users/austin/Things/MoreThings/pythonClass')
+pythonClass
+```
+- os.path.dirname(path) - Return the directory name of pathname path.
+```
+import os
+print os.path.dirname('/Users/austin/Things/MoreThings/pythonClass')
+/Users/austin/Things/MoreThings
+```
