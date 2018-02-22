@@ -21,8 +21,7 @@ Python is currently split between 2 major branches, Python 2.x and Python 3.x. P
 ---?include=topics/flow_control/PITCHME.md
 ---?include=topics/language_features/PITCHME.md
 ---?include=topics/files/PITCHME.md
----
-## StdLib
+---?include=topics/stdlib/PITCHME.md
 ---
 ## packages
 ---
