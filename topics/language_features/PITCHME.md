@@ -71,3 +71,9 @@ with open('test.csv') as f:
     print sorted(lines,key=lambda line: line.split(',')[1],reverse=True)
 >>> ['192.168.1.3,5555555,bye', '192.168.1.2,2222222,hi\n', '192.168.1.1,1111111,hello\n']
 ```
+@[3](We are using a lambda function inside of the sorted function)
+@[3](The sorted function takes a list and a special sort key)
+@[3](For the sort key, we are using a lambda function)
+@[3](sorted is automatically passing in the current line as the argument to lambda)
+@[3](We then split the line on commas and fetch the item at index 1)
+@[3](Since this is a line line function, the value of line.split index 1 is considered to be implicitly returned)
