@@ -42,3 +42,32 @@ squares = {x: x**2 for x in (2, 4, 6)}
 >>> {2: 4, 4: 16, 6: 36}
 ```
 @[1](In this example, we are going through a loop and using the number as the key and the square as the value)
++++
+### Lambdas
+Also knows as anonymous functions (functions with out a name).  These functions are considered throw-away functions as they are just needed when they are created. Lambda functions are mainly used in combination with the filter(), map() and reduce().
++++
+The general syntax looks like:
+```
+lambda arguments: an_expression
+```
++++
+A simple example:
+```
+f = lambda x, y : x + y
+f(1,1)
+>>> 2
+```
+<!-- https://www.python-course.eu/lambda.php -->
++++
+A complex example, assuming a csv file called test.csv with the following content
+```
+192.168.1.1,1111111,hello
+192.168.1.2,2222222,hi
+192.168.1.3,5555555,bye
+```
+```
+with open('test.csv') as f:
+    lines = f.readlines()
+    print sorted(lines,key=lambda line: line.split(',')[1],reverse=True)
+>>> ['192.168.1.3,5555555,bye', '192.168.1.2,2222222,hi\n', '192.168.1.1,1111111,hello\n']
+```
