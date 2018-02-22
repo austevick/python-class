@@ -114,3 +114,30 @@ logger.critical('critical message')
 @[10](Add this handler to our logger)
 @[12](Print a debug message)
 @[14](Print a warning statement)
+
++++
+### Argparse
+The argparse module is the recommended module for creating command line application. It is fairly log level but there are many 3rd party packages that wrap it and make it easier to use
+```
+import argparse
+parser = argparse.ArgumentParser()
+parser.add_argument("list",help="List stuff")
+parser.add_argument("--debug",action='store_true', help="Run with Debug")
+args = parser.parse_args()
+if args.debug:
+    'Im in debug mode!'
+if args.list:
+    print 'Listing!!!'
+```
+@[2](Create the parser)
+@[3](Add a positional argument)
+@[4](Add a optional argument)
+@[4](This argument will be stored as True when set)
+@[5](Parse the arguments)
+@[6](If --debug was set)
++++
+### Datetime
+The datetime package is the module python uses for working with dates and times.
+```
+import re
+```
