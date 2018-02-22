@@ -98,4 +98,4 @@ import random
   for random_number in lottery():
          print("And the next number is... %d!" %(random_number))
 ```
-As seen in [](https://www.learnpython.org/en/Generators)
+As seen in https://www.learnpython.org/en/Generators
