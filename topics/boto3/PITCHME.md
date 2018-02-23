@@ -15,6 +15,7 @@ Configuration (setting up access key) is just as easy. The easiest way is to use
 ```
 aws configure
 ```
++++
 If you don't have the aws cli, you can just create a file at `~/.aws/credentials` with
 ```
 [default]
