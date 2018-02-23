@@ -27,3 +27,6 @@ and create ~/.aws/config with
 [default]
 region=us-east-1
 ```
++++
+When running boto3 on an EC2 instance or a ECS Task, boto3 will automatically try and fetch credentials from the IAM instance profile/ECS Task Role.
++++
