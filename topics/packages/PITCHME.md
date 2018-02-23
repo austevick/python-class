@@ -1,6 +1,6 @@
 ## Modules and Packages
 +++
-Modules in Python are simply Python files with a .py extension. The name of the module will be the name of the file. A Python module can have a set of functions, classes or variables defined and implemented.
+Modules in Python are just Python files with a .py extension. The name of the module will be the name of the file. A Python module can have a set of functions, classes or variables defined and implemented.
 <!-- https://www.learnpython.org/en/Modules_and_Packages -->
 +++
 Given 2 files such as
@@ -16,10 +16,10 @@ def hello():
     print 'Hi Austin'
 ```
 +++
-app.py contains
+And app.py contains
 ```
 import utils
-utils.hello
+utils.hello()
 ```
 When we run
 ```
@@ -30,7 +30,7 @@ we get
 >>> Hi Austin
 ```
 +++
-Instead of importing the whole module utils, we can just import the `hello()` as well
+Instead of importing the whole module `utils`, we can just import the `hello()` method as well
 ```
 from utils import hello
 hello()
@@ -46,8 +46,9 @@ Each package in Python is a directory which MUST contain a special file called _
 +++
 If we create a directory called utils, which marks the package name, we can then create a module inside that package called say. We also must not forget to add the __init__.py file inside the utils directory.
 
-To use the say module in the utils package, we can import it in two ways
+To use the say module in the utils package, we can import in several ways
 +++
+Our small project has the below structure
 ```
 .
 ├── app.py
@@ -55,7 +56,7 @@ To use the say module in the utils package, we can import it in two ways
     ├── __init__.py
     └── say.py
 ```
-
++++
 The utils/say.py file has
 ```
 def hello():
@@ -63,15 +64,16 @@ def hello():
 def bye():
     print 'Bye Austin'
 ```
-
++++
 The utils/__init__.py file is empty.
-
++++
 The app.py file looks like
 ```
 import utils
 utils.say.hello()
 utils.say.bye()
 ```
++++
 When we run app.py
 ```
 python app.py
@@ -82,7 +84,7 @@ We get
 >>> Bye Austin
 ```
 +++
-We can also write the app.py file like
+We can also write the app.py to look like
 ```
 from utils import say
 say.hello()
