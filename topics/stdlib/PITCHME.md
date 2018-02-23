@@ -139,5 +139,40 @@ if args.list:
 ### Datetime
 The datetime package is the module python uses for working with dates and times.
 ```
-import re
+import datetime
+print datetime.datetime.now()
 ```
++++
+### Regex
+<!-- https://developers.google.com/edu/python/regular-expressions -->
+Regular expressions are used for matching text patterns. In Python, the regex features are under the `re` package.
+```
+import re
+match = re.search(pat, str)
+```
++++
+The re.search() method takes a regular expression pattern and a string and searches for that pattern within the string. If the search is successful, search() returns a match object or None otherwise. Therefore, the search is usually immediately followed by an if-statement to test if the search succeeded
++++
+```
+str = 'an example word:cat!!'
+match = re.search(r'word:\w\w\w', str)
+  if match:                      
+    print 'found', match.group()
+  else:
+    print 'did not find'
+```
++++
+findall() is probably the single most powerful function in the re module. Above we used re.search() to find the first match for a pattern. findall() finds *all* the matches and returns them as a list of strings, with each string representing one match.
++++
+```
+## Suppose we have a text with many email addresses
+str = 'purple alice@google.com, blah monkey bob@abc.com blah dishwasher'
+
+## Here re.findall() returns a list of all the found email strings
+emails = re.findall(r'[\w\.-]+@[\w\.-]+', str) ## ['alice@google.com', 'bob@abc.com']
+for email in emails:
+    # do something with each found email string
+    print email
+
+```
++++
